@@ -119,7 +119,7 @@ public class DoorListener implements Listener {
             //main.debug("Block is null");
             return;
         }
-        if(!(block.getBlockData() instanceof Door)) {
+        if(!(block.getBlockData() instanceof Door) || !(block.getBlockData() instanceof TrapDoor)) {
             //main.debug("This is no door");
             return;
         }
